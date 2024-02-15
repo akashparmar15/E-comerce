@@ -4,13 +4,13 @@ const Item = (props) => {
     return (
         <div className='item'>
             <img src={props.image} alt="" />
-            <p>{props.name}</p>
-            <div className="item-prices">
-                <div className="item-new-price">
-                    {props.new_price}
+            <p className="py-3.5">{props.name}</p>
+            <div className="item-prices flex">
+                <div className="item-new-price pe-3 font-bold">
+                    ${props.new_price}
                 </div>
-                <div className="item-old-price">
-                    {props.old_price}
+                <div className="item-old-price line-through">
+                    ${props.old_price}
                 </div>
 
             </div>

@@ -8,6 +8,9 @@ import Shop from './compo/Homes/Shop';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hero from './compo/Hero/Hero';
 import Popular from './compo/Popular/Popular';
+import Offers from './compo/Offer/Offers';
+import Newcollection from './compo/Newcollection/Newcollection';
+import Newsletter from './compo/Newsletter/Newsletter';
 function App() {
   return (
     <div>
@@ -26,6 +29,9 @@ function App() {
         </Routes>
         <Hero />
         <Popular />
+        <Offers />
+        <Newcollection />
+        <Newsletter />
       </BrowserRouter>
     </div>
   );

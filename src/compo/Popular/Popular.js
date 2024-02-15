@@ -6,9 +6,9 @@ const Popular = () => {
     return (
         <div>
             <div className="popular">
-                <h1 className=''>POPULAR IN WOMEN</h1>
-                <hr />
-                <div className="popular-item flex container">
+                <h1 className="text-5xl font-bold text-center">POPULAR IN WOMEN</h1>
+                <hr className="mx-auto bg-black h-1.5 w-52 my-4"/>
+                <div className="popular-item flex container mx-auto my-14">
                     {data_product.map((item, i) => {
                         return <Item key={i} id={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price} />
                     })}
