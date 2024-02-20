@@ -2,7 +2,7 @@ import React from 'react'
 
 const Item = (props) => {
     return (
-        <div className='item'>
+        <div className='item flex justify-center flex-col scale-100 hover:scale-105 transition-all shadow-md p-10'>
             <img src={props.image} alt="" />
             <p className="py-3.5">{props.name}</p>
             <div className="item-prices flex">
