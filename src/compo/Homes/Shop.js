@@ -5,6 +5,8 @@ import Offers from '../Offer/Offers'
 import Newcollection from '../Newcollection/Newcollection'
 import Newsletter from '../Newsletter/Newsletter'
 import Shopcategory from './Shopcategory'
+import ProductDisplay from '../ProductDisplay/ProductDisplay'
+import { ShopContext } from '../Context/Shopcontext'
 
 const Shop = () => {
     return (
@@ -15,6 +17,8 @@ const Shop = () => {
             <Newcollection />
             <Newsletter />
             <Shopcategory />
+            <ShopContext />
+            <ProductDisplay />
         </div>
     )
 }
