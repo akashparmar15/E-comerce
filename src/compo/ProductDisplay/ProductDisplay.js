@@ -5,16 +5,16 @@ import star_dull_icon from '../Assets/star_dull_icon.png';
 const ProductDisplay = (props) => {
     const { product } = props;
     return (
-        <div className='productdisplay'>
-            <div className="display-left">
+        <div className='productdisplay container mx-auto flex'>
+            <div className="display-left flex">
                 <div className="product-img-list">
-                    <img src={product.image} alt="" />
-                    <img src={product.image} alt="" />
-                    <img src={product.image} alt="" />
-                    <img src={product.image} alt="" />
+                    <img className='h-42 w-72 p-3' src={product.image} alt="" />
+                    <img className='h-40 p-3' src={product.image} alt="" />
+                    <img className='h-40 p-3' src={product.image} alt="" />
+                    <img className='h-40 p-3' src={product.image} alt="" />
                 </div>
                 <div className="product-main-img">
-                    <img src={product.image} alt="" />
+                    <img className='p-3 h-4/7' src={product.image} alt="" />
                 </div>
             </div>
             <div className="display-right">
