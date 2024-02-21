@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { ShopContext } from '../Context/Shopcontext'
-import dropdown_icon from '../Assets/dropdown_icon.png'
+
 import Item from '../Items/Item'
 
 const Shopcategory = (props) => {
@@ -11,11 +11,11 @@ const Shopcategory = (props) => {
 
       <div className="shortcategory-index container mx-auto flex justify-between items-center mt-8">
         <p>
-          <span className='font-bold'>Showing 1-12</span> Our Of 36 products
+          <span className='font-bold'>Showing 1-12</span> Out Of 36 products
         </p>
-        <div className="dropdown-icon flex items-center gap-2 border border-gray-600 p-3 px-5 rounded-full">
+        {/* <div className="dropdown-icon flex items-center gap-2 border border-gray-600 p-3 px-5 rounded-full">
           Sort By <img className='h-2' src={dropdown_icon} alt="" />
-        </div>
+        </div> */}
       </div>
       <div className=" grid grid-rows-2 grid-cols-4 gap-10 container mx-auto py-10">
         {all_product.map((item, i) => {
@@ -26,9 +26,9 @@ const Shopcategory = (props) => {
           }
         })}
       </div>
-      <div className="load-more mx-auto flex justify-center my-10">
+      {/* <div className="load-more mx-auto flex justify-center my-10">
         <button className=' bg-slate-200 p-3 px-5 rounded-full'>Explore More</button>
-      </div>
+      </div> */}
     </div>
   )
 }
