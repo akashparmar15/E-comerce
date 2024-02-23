@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 const Navbar = () => {
     const [menu, setMenu] = useState("shop");
     return (
-        <div className='navbar flex py-2 justify-center items-center w-full'>
+        <div className='navbar flex py-2 justify-center items-center sticky top-0 z-50 bg-white'>
             <div className='nav-logo flex justify-center items-center w-[33%]'>
                 <img src={logo} alt='' className='w-16 mr-3' />
                 <p className='font-bold text-xl'>SHOPPER</p>

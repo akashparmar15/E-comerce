@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="copy-right text-center font-semibold container mx-auto  sm:mt-10">
+            <div className="copy-right text-center font-semibold container mx-auto ">
                 <hr className='bg-black' />
                 <p className='py-3'>COPYRIGHT © 2023 ALL RIGHT RESERVED By AKASH PARMAR</p>
             </div>

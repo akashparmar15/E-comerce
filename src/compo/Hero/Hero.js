@@ -18,14 +18,14 @@ const Hero = () => {
                     <h1 className='text-7xl font-bold leading-tight'>For everyone</h1>
 
                     <div className="btn my-5">
-                        <button className='bg-red-500 flex rounded-full py-2 px-4 items-center border-none text-white'>Latest Collaction
+                        <button className='bg-red-500 flex rounded-full py-3 px-4 items-center border-none text-white'>Latest Collaction
                             <img className='ps-3' src={arrow_icon} alt="" />
                         </button>
 
                     </div>
                 </div>
 
-                <div className="hero-right flex-1">
+                <div className="hero-right flex-1 item-center flex justify-center">
                     <img src={Hero_img} alt="" />
                 </div>
             </div>
