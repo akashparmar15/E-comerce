@@ -6,8 +6,8 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png'
 const Footer = () => {
     return (
         <div>
-            <div className="footer py-10 w-1/3 mx-auto">
-                <div className="footer-logo flex items-center justify-center">
+            <div className="footer py-10 w-1/3 mx-auto  sm:w-2/3">
+                <div className="footer-logo flex items-center justify-center space-x-2">
                     <img src={footer_logo} alt="" />
                     <p className='font-bold text-3xl'>SHOOPER</p>
                 </div>
@@ -19,18 +19,18 @@ const Footer = () => {
                     <li>Contact</li>
                 </ul>
                 <div className="social-icon flex justify-center my-5">
-                    <div className="icons">
+                    <div className="icons md:mx-5">
                         <img src={instagram_icon} alt="" />
                     </div>
-                    <div className="icons mx-5">
+                    <div className="icons md:mx-5 mx-5">
                         <img src={pintester_icon} alt="" />
                     </div>
-                    <div className="icons">
+                    <div className="icons md:mx-5">
                         <img src={whatsapp_icon} alt="" />
                     </div>
                 </div>
             </div>
-            <div className="copy-right text-center font-semibold container mx-auto">
+            <div className="copy-right text-center font-semibold container mx-auto  sm:mt-10">
                 <hr className='bg-black' />
                 <p className='py-3'>COPYRIGHT © 2023 ALL RIGHT RESERVED By AKASH PARMAR</p>
             </div>

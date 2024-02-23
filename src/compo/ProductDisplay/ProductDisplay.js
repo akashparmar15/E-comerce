@@ -1,9 +1,11 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import star_icon from '../Assets/star_icon.png';
 import star_dull_icon from '../Assets/star_dull_icon.png';
+import { ShopContext } from '../Context/Shopcontext';
 
 const ProductDisplay = (props) => {
     const { product } = props;
+    const { addToCart } = useContext(ShopContext);
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -49,7 +51,7 @@ const ProductDisplay = (props) => {
                         <div className='h-12 w-12 border-2 border-gray-500 justify-center flex items-center'>XXL</div>
                     </div>
                 </div>
-                <button className='text-white bg-red-500 px-5 py-3 mt-8'>ADD TO CART</button>
+                <button onClick={() => { addToCart(product.id) }} className='text-white bg-red-500 px-5 py-3 mt-8'>ADD TO CART</button>
                 <div className="mt-12">
                     <p><span className='font-bold'>Category : </span>Women, T-shirt , Crop Top</p>
                     <p><span className='font-bold'>Tags : </span>Modern, Latest</p>
